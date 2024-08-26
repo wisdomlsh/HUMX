@@ -1,21 +1,19 @@
 {
-  "name": "HUMX",
+  "name": "humx",
   "version": "0.0.1",
-  "description": "dumi-theme-antd-style 是为 dumi2 打造的一款文档站主题包，提供了更加美观、易用的研发与阅读体验",
+  "description": "humx是个人搭建的组件库，用于学习以及公司内部业务组件库开发",
   "keywords": [
-    "npm",
-    "template"
+    "react",
+    "humx",
+    "components"
   ],
-  "homepage": "https://github.com/arvinxx/dumi-theme-antd-style",
-  "bugs": {
-    "url": "https://github.com/arvinxx/dumi-theme-antd-style/issues/new"
-  },
+  "homepage": "https://github.com/wisdomlsh/HUMX",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arvinxx/dumi-theme-antd-style.git"
+    "url": "https://github.com/wisdomlsh/HUMX.git"
   },
   "license": "MIT",
-  "author": "arvinxx(arvinx@foxmail.com)",
+  "author": "shuo.mac@gmail.com",
   "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.js",

@@ -1,27 +1,55 @@
+import { LoadingOutlined } from '@ant-design/icons';
 import React, { memo } from 'react';
-import { useStyles } from "./style";
+import { useStyles } from './style';
 
 export interface ButtonProps {
   /** 按钮类型 */
-  type?: 'primary' | 'default' | 'link' | 'text' | 'dashed';
+  type?: 'primary' | 'secondary' | 'warning' | 'danger' | 'tertiary';
+  theme?: 'light' | 'solid' | 'ghost' | 'outline';
   children?: React.ReactNode;
-  danger?: boolean
-  onClick?: React.MouseEventHandler<HTMLButtonElement>
-  className?: string
+  danger?: boolean;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  className?: string;
+  icon?: React.ReactNode;
+  iconPosition?: 'left' | 'right';
+  disabled?: boolean;
+  loading?: boolean;
 }
 
 /** 按钮组件 */
 const Button: React.FC<ButtonProps> = (props) => {
-  const { className, type, children, onClick, danger } = props
-  const { styles } = useStyles()
+  const {
+    className,
+    disabled,
+    loading,
+    type = 'primary',
+    children,
+    icon,
+    onClick,
+    theme = 'light',
+    iconPosition = 'left',
+    ...reset
+  } = props;
+  const { styles } = useStyles();
+
+  const iconRight = iconPosition === 'left' ? 'iconLeft' : 'iconRight';
+  const disable = disabled ? styles['disabled'] : '';
 
   return (
     <button
-      type='button'
-      className={`${styles.button} ${className} ${type ? styles[type] : ''} ${danger ? styles.danger : ''}`}
+      type="button"
+      disabled={disabled}
+      className={`${styles['button']} ${className ?? ''} ${styles[type]} ${
+        styles[theme]
+      } ${disable}`}
       onClick={onClick}
+      {...reset}
     >
-      {children}
+      <span className="humx-btn-content">
+        {loading && <span>{<LoadingOutlined />}</span>}
+        {icon && <span className={styles[iconRight]}>{icon}</span>}
+        <span>{children}</span>
+      </span>
     </button>
   );
 };

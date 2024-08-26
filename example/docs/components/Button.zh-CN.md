@@ -1,22 +1,20 @@
 ---
 category: Components
 title: Button
-# toc: content # 在页面右侧展示锚点链接
 description: 按钮用于开始一个即时操作。
 humx: true
 demo:
-  cols: 2
+  cols: 1
 group:
   title: 通用
   order: 1
-atomId: ApiHeader
 ---
 
 ## 何时使用
 
 标记了一个（或封装一组）操作命令，响应用户点击行为，触发相应的业务逻辑。
 
-在 HUMX 中提供了五种按钮。
+在 humx 中提供了五种按钮。
 
 - 主按钮：用于主行动点，一个操作区域只能有一个主按钮。
 - 默认按钮：用于没有主次之分的一组行动点。
@@ -34,8 +32,10 @@ atomId: ApiHeader
 ## 代码演示
 
 <!-- prettier-ignore -->
-<code src="./demos/Button/basic.tsx">按钮类型</code>
-<code src="./demos/Button/danger.tsx">按钮图标</code>
+<code src="./demos/Button/zh-CN/basic.zh.tsx">按钮类型</code>
+<code src="./demos/Button/zh-CN/theme.zh.tsx">按钮主题</code>
+<code src="./demos/Button/zh-CN/icon.zh.tsx">图标</code>
+<code src="./demos/Button/zh-CN/loading.zh.tsx">加载中</code>
 
 ## API
 

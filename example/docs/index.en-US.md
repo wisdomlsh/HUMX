@@ -1,6 +1,6 @@
 ---
 hero:
-  title: HUMX UI
+  title: humx UI
   description: 一款个人搭建react组件库
 actions:
   - text: Get Started

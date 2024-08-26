@@ -52,7 +52,7 @@ const TokenContainer: <T, S>(props: TokenContainerProps<T, S>) => ReactElement |
   children,
   customToken: customTokenOrFn,
   customStylish: stylishOrGetStylish,
-  prefixCls = 'ant',
+  prefixCls = 'humx',
 }) => {
   const themeState = useThemeMode();
   const { appearance, isDarkMode } = themeState;

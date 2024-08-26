@@ -6,7 +6,7 @@ import { Flexbox } from 'react-layout-kit';
 
 import Code from '../CodeSnippet';
 
-import { ApiHeaderProps } from 'HUMX/src';
+import { ApiHeaderProps } from 'humx/src';
 import { useStyles } from './style';
 
 /**

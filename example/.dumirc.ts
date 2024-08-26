@@ -1,5 +1,5 @@
 import { defineConfig } from 'dumi';
-import type { SiteThemeConfig } from 'HUMX';
+import type { SiteThemeConfig } from 'humx';
 import path from 'path';
 
 import { homepage, name } from '../package.json';
@@ -7,7 +7,7 @@ import { homepage, name } from '../package.json';
 const isProd = process.env.NODE_ENV === 'production';
 
 const themeConfig: SiteThemeConfig = {
-  name: 'HUMX UI',
+  name: 'humx UI',
   logo: 'https://gw.alipayobjects.com/zos/hitu-asset/c88e3678-6900-4289-8538-31367c2d30f2/hitu-1609235995955-image.png',
 
   socialLinks: { github: homepage },
@@ -30,7 +30,7 @@ export default defineConfig({
     { id: 'zh-CN', name: '中文' },
   ],
   alias: {
-    'HUMX': path.join(__dirname, '../src'),
+    humx: path.join(__dirname, '../src'),
   },
   styles: [
     `html, body { background: transparent;  }

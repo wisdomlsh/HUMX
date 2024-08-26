@@ -2,7 +2,7 @@ import { createStyles } from 'antd-style';
 import { Flexbox } from 'react-layout-kit';
 
 import chroma from 'chroma-js';
-import { useStore } from 'HUMX/builtins/ColorPalettes/store';
+import { useStore } from 'humx/builtins/ColorPalettes/store';
 import { FC, useMemo } from 'react';
 import { invertColor } from './invertColor';
 

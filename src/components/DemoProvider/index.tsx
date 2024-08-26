@@ -50,7 +50,7 @@ const DemoProvider: FC<DemoProviderProps> = ({
 
   return (
     <ThemeProvider
-      prefixCls={inheritSiteTheme ? undefined : 'ant'}
+      prefixCls={'humx'}
       theme={
         inheritSiteTheme
           ? (appearance) => {

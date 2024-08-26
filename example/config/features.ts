@@ -1,4 +1,4 @@
-import { IFeature } from 'HUMX';
+import { IFeature } from 'humx';
 
 export const featuresZh: IFeature[] = [
   {

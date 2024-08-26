@@ -1,6 +1,6 @@
 ---
 hero:
-  title: HUMX UI
+  title: humx UI
   description: Ant Design Style 文档站主题包
 actions:
   - text: 开始使用
